@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Modern FAQ Page</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: #e4e8ea;
+      color: #333;
+      padding: 50px 20px;
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 2.5em;
+      margin-bottom: 40px;
+      color: #010a14;
+    }
+
+    .faq-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+      gap: 25px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .faq-item {
+      background-color: #f7f5f5;
+      padding: 20px 25px;
+      border-radius: 12px;
+      box-shadow: 0 8px 20px rgba(221, 46, 46, 0.05);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .faq-item:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 12px 25px rgba(5, 3, 3, 0.08);
+    }
+
+    .question {
+      font-weight: 600;
+      font-size: 1.2em;
+      color: #04f876;
+      margin-bottom: 10px;
+    }
+
+    .answer {
+      font-size: 1em;
+      line-height: 1.6;
+      color: #ae4343;
+    }
+
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 1.8em;
+      }
+
+      .faq-item {
+        padding: 15px;
+      }
+    }
+    
+  </style>
+</head>
+<body>
+
+  <h1>Frequently Asked Questions (FAQ'S)</h1>
+
+  <div class="faq-container">
+
+    <div class="faq-item">
+      <div class="question">1. What is HTML?</div>
+      <div class="answer">HTML (HyperText Markup Language) is the foundation of all websites. It defines the structure of web content.</div>
+    </div>
+
+    <div class="faq-item">
+      <div class="question">2. What is the purpose of CSS?</div>
+      <div class="answer">CSS (Cascading Style Sheets) enhances the appearance of HTML by controlling layout, colors, and fonts.</div>
+    </div>
+
+    <div class="faq-item">
+      <div class="question">3. What is JavaScript used for?</div>
+      <div class="answer">JavaScript adds interactivity to websites—like clickable menus, form validation, animations, and more.</div>
+    </div>
+
+    <div class="faq-item">
+      <div class="question">4. What is a responsive website?</div>
+      <div class="answer">A responsive website adjusts its layout and content to fit different screen sizes—like phones, tablets, and desktops.</div>
+    </div>
+
+    <div class="faq-item">
+      <div class="question">5. Is web development a good career?</div>
+      <div class="answer">Yes! Web development offers creative freedom, strong demand, and many paths for growth in tech fields.</div>
+    </div>
+
+  </div>
+
+</body>
+</html>

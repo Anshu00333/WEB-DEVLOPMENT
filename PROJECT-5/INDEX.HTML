@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Responsive Sticky Navbar </title>
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    .navbar {
+      position: sticky;
+      top: 0;
+      background-color: #333;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 20px;
+      z-index: 1000;
+      flex-wrap: wrap;
+    }
+
+    .logo img {
+      height: 45px;
+      vertical-align: middle;
+    }
+
+    .navbar-links {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .navbar-links a {
+      color: white;
+      text-decoration: none;
+      padding: 10px 15px;
+    }
+
+    .navbar-links a:hover {
+      background-color: #575757;
+      border-radius: 4px;
+    }
+
+    section {
+      padding: 100px 20px;
+      height: 100vh;
+    }
+
+    #section1 { background-color: #f4f4f4; }
+    #section2 { background-color: #e0e0e0; }
+    #section3 { background-color: #cccccc; }
+
+    h2 {
+      margin-top: 0;
+    }
+
+    
+    @media (max-width: 600px) {
+      .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .navbar-links {
+        width: 100%;
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .navbar-links a {
+        width: 100%;
+        padding: 10px 20px;
+      }
+
+      .logo img {
+        height: 40px;
+        margin-bottom: 10px;
+        
+      }
+      footer{
+        text-decoration: none;
+      }
+      
+    }
+  </style>
+</head>
+<body>
+
+  <div class="navbar">
+    <div class="logo">
+      <img src="logo.png" alt="Launched Global Logo">
+    </div>
+    <div class="navbar-links">
+      <a href="#section1">Home</a>
+      <a href="#section2">About</a>
+      <a href="#section3">Contact</a>
+    </div>
+  </div>
+
+  <section id="section1">
+    <h2>Home</h2>
+<p>Welcome to <strong>Launched Global</strong> — where visionary ideas take flight. We empower startups, creators, and enterprises to scale beyond boundaries through strategic innovation, global exposure, and actionable insights. Explore our platform and join the movement that’s transforming ambition into action.</p>
+
+  </section>
+
+  <section id="section2">
+    <h2>About</h2>
+<p><strong>Launched Global</strong> is a growth accelerator built for the modern era. We bring together a global network of entrepreneurs, investors, and mentors to launch and scale groundbreaking ventures. From early ideation to international expansion, our mission is to unlock your full potential and help you thrive in competitive markets.</p>
+
+  </section>
+
+  <section id="section3">
+   <h2>Contact</h2>
+<p>Have a project in mind? Interested in partnering with <strong>Launched Global</strong>? We'd love to hear from you. Reach out to our team for collaborations, investment inquiries, or platform support — and let's build the future, together.</p>
+
+  </section>
+
+  <footer>
+    ALL RIGHTS RESERVED
+    <P>THANKS FOR VISITING</P>
+  </footer>
+</body>
+</html>

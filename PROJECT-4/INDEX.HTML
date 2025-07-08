@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Gallery</title>
+  <style>
+
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 20px;
+      background-color: #f2f2f2;
+    }
+
+    .gallery {
+      text-align: center;
+    }
+
+    .gallery img {
+      width: 100%;
+      height: auto;
+      display: block;
+      margin-bottom: 15px;
+      border-radius: 8px;
+    }
+
+    .gallery-item {
+      display: inline-block;
+      width: 100%;
+      padding: 10px;
+      box-sizing: border-box;
+      vertical-align: top;
+    }
+
+    /* Medium screens: 2 columns */
+    @media (min-width: 600px) {
+      .gallery-item {
+        width: 50%;
+      }
+    }
+
+    /* Large screens: 3 columns */
+    @media (min-width: 900px) {
+      .gallery-item {
+        width: 33.33%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <h1>MY TRAVEL MEMORIES</h1>
+  <div class="gallery">
+    <div class="gallery-item"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR0UXrSKDxEE4W9pE4Cnykgt8PweaUVd0UdWg&s1" alt="Image 1">
+    LINGARAJ TEMPLE</div>
+
+    <div class="gallery-item"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQABEL1aOEZZGeKYCDqGxN-HJksLSpo43QMCA&s" alt="Image 2">
+    DHAULI SANTI-STUPA</div>
+
+    <div class="gallery-item"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvfiXzjYd_shL-hxGWUABp-ZsB3GSq_n4TGQ&s" alt="Image 3">
+    KONARAK SUN TEMPLE</div>
+
+    <div class="gallery-item"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRe018O3Fmf2YrVGQAVCWrRDDesG6uIop9IHg&s" alt="Image 4">
+    RAM MANDIR</div>
+
+    <div class="gallery-item"><img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0e/23/b8/16/awasome-placeplz-once.jpg?w=1200&h=700&s=1" alt="Image 5"> 
+    JAGGANATH TEMPLE(NAYAGRAH)</div>
+
+    <div class="gallery-item"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLgNQCdANVOJyPM8m9XmlgBqMY9oIy1jKcFw&s" alt="Image 6">
+    ELEPHANT CAVES KHANDAGIRI</div>
+  </div>
+
+</body>
+</html>

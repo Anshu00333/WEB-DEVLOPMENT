@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Our Crazy Services</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+      color: #0c0101;
+      padding: 40px 20px;
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 3em;
+      color: #0f0a01;
+      margin-bottom: 40px;
+      text-shadow: 0 0 5px #dd8707, 0 0 10px #21cfbb;
+    }
+
+    .services-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 30px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .service-card {
+      background: rgba(255, 255, 255, 0.05);
+      border: 2px solid #000908;
+      border-radius: 15px;
+      padding: 25px;
+      box-shadow: 0 0 15px rgba(0, 12, 11, 0.4);
+      transition: all 0.4s ease;
+      backdrop-filter: blur(10px);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .service-card:hover {
+      transform: scale(1.03) rotate(-1deg);
+      box-shadow: 0 0 20px #000f0d, 0 0 40px #00ffe7;
+    }
+
+    .service-card::before {
+      content: '';
+      position: absolute;
+      top: -50%;
+      left: -50%;
+      width: 200%;
+      height: 200%;
+      background: radial-gradient(circle, rgba(14, 38, 36, 0.1), transparent);
+      animation: spin 8s linear infinite;
+      z-index: 0;
+    }
+
+    .service-content {
+      position: relative;
+      z-index: 1;
+    }
+
+    .service-title {
+      font-size: 1.5em;
+      margin-bottom: 15px;
+      color: #03fde4eb;
+      text-shadow: 0 0 5px #0bc1af;
+    }
+
+    .service-desc {
+      font-size: 1em;
+      line-height: 1.6;
+      color: #f9f9f9;
+    }
+
+    @keyframes spin {
+      from {
+        transform: rotate(0deg);
+      }
+      to {
+        transform: rotate(300deg);
+      }
+    }
+
+    @media (max-width: 768px) {
+      h1 {
+        font-size: 2.2em;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .service-card {
+        padding: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <h1>🔥 Our Crazy Services</h1>
+
+  <div class="services-container">
+
+    <div class="service-card">
+      <div class="service-content">
+        <h2 class="service-title">Meme Strategy Consulting</h2>
+        <p class="service-desc">Why sell with ads when you can sell with LOLs? We craft viral memes that boost engagement and make your brand unforgettable.</p>
+      </div>
+    </div>
+
+    <div class="service-card">
+      <div class="service-content">
+        <h2 class="service-title">Virtual Reality Yoga</h2>
+        <p class="service-desc">Bend your reality while you bend your body. Our VR yoga classes put you on a beach, mountain, or even Mars—no passport needed.</p>
+      </div>
+    </div>
+
+    <div class="service-card">
+      <div class="service-content">
+        <h2 class="service-title">Pet Influencer Management</h2>
+        <p class="service-desc">Is your cat the next TikTok star? We manage, market, and monetize your furry (or feathery) social media royalty.</p>
+      </div>
+    </div>
+
+    <div class="service-card">
+      <div class="service-content">
+        <h2 class="service-title">Dream-to-Design AI</h2>
+        <p class="service-desc">You dream it, we prompt it. Using generative AI, we turn your wildest ideas into real graphics, logos, or website mockups—fast.</p>
+      </div>
+    </div>
+
+  </div>
+
+</body>
+</html>

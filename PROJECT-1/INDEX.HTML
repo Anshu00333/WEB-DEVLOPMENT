@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ANSHUMAN'S Portfolio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+        header, footer {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1rem;
+        }
+        nav a {
+            color: #fff;
+            margin: 0 1rem;
+            text-decoration: none;
+            transform: translate(0,3px);
+        }
+        main {
+            padding: 2rem;
+            max-width: 800px;
+            margin: auto;
+        }
+        section {
+            margin-bottom: 2rem;
+        }
+        h1, h2 {
+            color: #c13838;
+        }
+        article {
+            background: #fff;
+            border: 1px solid #ddd;
+            padding: 1rem;
+            margin-bottom: 1rem;
+        }
+        form input, form textarea {
+            display: block;
+            width: 100%;
+            padding: 0.5rem;
+            margin-bottom: 1rem;
+            border: 1px solid #ccc;
+        }
+        form button {
+            padding: 0.5rem 1rem;
+            background: #333;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+        
+    </style>
+</head>
+<body>
+    <header>
+        <h1>ANSHUMAN'S PORTFILO
+        </h1>
+        <nav>
+            <a href="#HOME">HOME</a>
+            <a href="#about">ABOUT</a>
+            <a href="#projects">PROJECTS</a>
+            <a href="#contact">CONTACT ME</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="about">
+            <h2>About Me</h2>
+            <p>Hello i am Anshuman satapathy , i am very passioante about making websites,i love to do coding </p>
+        </section>
+
+        <section id="projects">
+            <h2>Projects</h2>
+            <article>
+                <h3>Project 1</h3>
+                <p>A simple to-do list app built with HTML, CSS, and JavaScript to help you stay organized.</p>
+            </article>
+            <article>
+                <h3>Project 2</h3>
+                <p>A weather app that shows current weather data using a public API and responsive design.</p>
+            </article>
+            <article>
+                <h3>Project 3</h3>
+                <p>A basic blog template with clean design and semantic HTML structure for easy customization.</p>
+            </article>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Me</h2>
+            <form>
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="6" required></textarea>
+
+                <button type="submit">SUBMIT</button>
+                <p>THANK YOU FOR YOUR EFFORTS</p>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        &copy; 2025 ANSHUMAN'S Portfolio website
+    </footer>
+</body>
+</html>

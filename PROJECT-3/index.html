@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Blog Post Template</title>
+  <style>
+    /* General Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      line-height: 1.6;
+      background-color: white;
+      color: #2d0505;
+      padding: 20px;
+    }
+
+    header {
+      margin-bottom: 30px;
+      background-color: #fff;
+      border-radius: 8px;
+      box-shadow: 0 20px 6p rgba(0,0,0,0.05);
+
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      color: #2c3e50;
+      font-style: normal;
+    }
+
+    nav{
+      display: flex;
+      gap: 15px;
+      flex-wrap: nowrap;
+    }
+    .navbar-container{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: nowrap;
+      gap: 20px;
+    }
+    .logo h1{
+      font-size: 1.8rem;
+      color: #2c3e50;
+      white-space: nowrap;
+    }
+
+    nav a {
+      margin: 2px 10px;
+      text-decoration: none;
+      color: #3498db;
+      font-size: 1rem;
+      font-weight: 500;
+      white-space: nowrap;
+    }
+   
+
+    main {
+      max-width: 800px;
+      margin: auto;
+      background: #fff;
+      padding: 25px;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+
+    article > header h2 {
+      font-size: 2rem;
+      margin-bottom: 10px;
+      color: #2c3e50;
+    }
+
+    img {
+      width: 20%;
+      height: auto;
+      margin: 20px 10px;
+      border: 1px solid #060606;
+      border-radius: 19px;
+    }
+
+    section h3 {
+      color: #34495e;
+      margin-top: 20px;
+      margin-bottom: 10px;
+    }
+
+    ul {
+      padding-left: 20px;
+      margin-bottom: 15px;
+    }
+
+    pre {
+      background: #f4f4f4;
+      padding: 10px;
+      border-left: 5px solid #3498db;
+      overflow-x: auto;
+      margin-top: 10px;
+    }
+
+    .comments {
+      margin-top: 40px;
+    }
+
+    .comment {
+      padding: 10px;
+      border-top: 1px solid #ddd;
+    }
+
+    .comment time {
+      font-size: 0.85rem;
+      color: #888;
+      display: block;
+      margin-top: 5px;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 40px;
+      font-size: 0.9rem;
+      color: #555;
+    }
+
+    @media (max-width:7000px) {
+      .logo h1{
+           flex-direction: column;
+           align-items: flex-start;
+           gap: 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+  <div class="navbar-container">
+    <div class="logo">
+      <h1>My Tech Blog</h1>
+    </div>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">Posts</a>
+      <a href="#">About</a>
+      <a href="#">Contact</a>
+    </nav>
+  </div>
+</header>
+
+
+  <main>
+    <article>
+      <header>
+        <h2>UNDERSTANDING JAVASCRIPT CLOSURES</h2>
+        <p>By <span class="author">Anshuman Satapathy</span> |
+           <time datetime="2025-07-02">July 2, 2025</time></p>
+      </header>
+
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRss-86vRuxOArrVRmMgerLZ5pi8yCs6U7zsQ&s" alt="JavaScript Illustration" />
+
+      <section>
+        <h3>Introduction</h3>
+        <p>Closures are a fundamental concept in JavaScript that allow functions to access variables from an enclosing scope—even after the outer function has returned.</p>
+      </section>
+
+      <section>
+        <h3>How Closures Work</h3>
+        <ul>
+          <li>Functions retain access to their lexical scope.</li>
+          <li>Used for data encapsulation and private variables.</li>
+          <li>Common in callbacks and event handlers.</li>
+        </ul>
+      </section>
+
+      <section>
+        <h3>Example</h3>
+
+      </section>
+    </article>
+
+    <section class="comments">
+      <h3>Comments</h3>
+      <article class="comment">
+        <p><strong>SMRUTI:</strong> Great explanation, helped me a lot!</p>
+        <time datetime="2025-07-02T10:00">10:00 AM</time>
+      </article>
+      <article class="comment">
+        <p><strong>SUNIL:</strong> Can you cover closures in async functions?</p>
+        <time datetime="2025-07-02T10:30">10:30 AM</time>
+      </article>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy ; 2025 Anshuman Satapathy. All rights reserved.</p>
+  </footer>
+</body>
+</html>
