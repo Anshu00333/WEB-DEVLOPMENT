@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>QuickCab - Book a Ride</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header>
+    <div class="logo">🚖 QuickCab</div>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Book Now</a></li>
+        <li><a href="#">Pricing</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>Reliable & Affordable Cab Booking</h1>
+    <p>Book your ride anytime, anywhere!</p>
+    <a href="#" class="btn">Book a Cab</a>
+  </section>
+
+  <section class="booking-form">
+    <h2>Book Your Ride</h2>
+    <form>
+      <input type="text" placeholder="Pickup Location" required>
+      <input type="text" placeholder="Drop Location" required>
+      <input type="datetime-local" required>
+      <select required>
+        <option value="">Select Cab Type</option>
+        <option value="sedan">Sedan</option>
+        <option value="suv">SUV</option>
+        <option value="hatchback">Hatchback</option>
+      </select>
+      <button type="submit" disabled>Submit</button>
+    </form>
+    <p class="note">* Submit button is disabled. Add JavaScript to enable functionality.</p>
+  </section>
+
+  <footer>
+    <p>© 2025 QuickCab. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
